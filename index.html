@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PORTFOLIO ANA COSTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+
+    <!-- Faz com que o Bootstrap fucione a biblioteca -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- CABEÇALHO -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Ana Costa Portfólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- classe mr deixa meu cima para baixo -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link "href="#port">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Currículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orçamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- CARROSEL -->
+    <section class="carrosel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Incio do card to portfolio -->
+
+    <section class="portifolio" id="portfolio">
+        <div class="container">
+            <h2 class="display-4 text-justify">PORTFÓLIO</h2>
+        </div>
+
+
+        <div class="row" style="margin-left:90px;
+         margin-top:49px;text-align: center;">
+            <!-- cards1 -->
+            <div class="card" style="width: 18rem;margin-top: 15px;margin-right:25px">
+                <img src="assets/html.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HTLM </h5>
+
+
+                    <!-- Botao modal -->
+                    <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Leia mais</a>-->
+                </div>
+                <!-- Modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Leia mais...
+
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-warning text-dark">
+                                <!-- Texto que  e passado dentro do modal -->
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    HTML é uma das linguagens que utilizamos para desenvolver websites.
+                                    O acrônimo HTML vem do inglês e significa Hypertext Markup Language ou em português
+                                    Linguagem de Marcação de Hipertexto.
+
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- corpo de texto do modal -->
+                            <div class="modal-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- cards2 -->
+
+            <div class="card" style="width: 18rem;margin-top: 15px;margin-right:25px;text-align: center;">
+                <img src="assets/css.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CSS </h5>
+
+
+
+                </div>
+                <!-- Texto do Botao -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa2">
+                    Leia mais...
+
+                </button>
+
+                <!-- Texto Dentro do Modal -->
+                <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-warning text-dark">
+                                <!-- Titulo do modal -->
+                                <h5 class="modal-title" id="exampleModalLabel">Resultado de imagem para css
+                                    CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o
+                                    português,
+                                    significa Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é
+                                    facilmente utilizado
+                                    com as linguagens de marcação HTML ou XHTML.
+
+
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- corpo de texto do modal -->
+                            <div class="modal-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- cards3 -->
+            <div class="card" style="width: 18rem; margin-top: 15px;margin-right:25px;text-align: center;">
+
+                <img src="assets/boot.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">BOOTSTRAP</h5>
+
+
+
+                </div>
+                <!-- Texto do Botao -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa3">
+                    Leia mais...
+
+                </button>
+
+                <!-- Texto Dentro do Modal -->
+                <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-warning text-dark">
+                                <!-- Titulo do modal -->
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    O Bootstrap é um kit de ferramentas de código aberto para desenvolvimento com HTML,
+                                    CSS e JS.
+                                    Crie rapidamente protótipos de suas ideias ou construa seu aplicativo inteiro com
+                                    nossas variáveis
+                                    ​​e mixins Sass, sistema de grade responsivo, extensos componentes pré-construídos e
+                                    poderosos plugins construídos no jQuery.
+
+
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- corpo de texto do modal -->
+                            <div class="modal-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="sobremim">
+        <hr class="featurette-divider" style="    border: 0;
+                    border-top: 1px solid rgba(0,0,0,.1);margin-top: 6rem;margin-bottom:rem;" />
+
+        <div class="container">
+            <img src="assets/eu.png" class="rounded  mx-auto float-right" alt="..." style=" margin-bottom: -384px;">
+
+            <h1 class="display-4">SOBRE MIM</h1>
+            <p class="text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries,
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- Formulario -->
+    <section class="formulario">
+        <!-- Linha que separa os temas -->
+        <hr class="featurette-divider" style="    border: 0;
+            border-top: 1px solid rgba(0,0,0,.1);margin-top:6rem;margin-bottom:rem;" />
+
+        <div class="container">
+        <h1 class="display-4 text_center">Fale Conosco</h1>
+        <p class="text-center">
+            Faça conosco seu orçamento ,sem compromisso.</p>
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Nome</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Informe seu nome">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">E-mail</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Informe seu E-mail">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Telefone</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Informe seu telefone">
+            </div>
+            <div class="form-group "> <label for="exampleFormControlTextarea1">Mensagem</label> <textarea
+                    class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> </div>
+
+
+            <button type="submit" value="submit">Enviar</button>
+        </form>
+
+    </div>
+
+
+
+    </section>
+
+
+
+    <!-- Parte da biblioteca Bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
