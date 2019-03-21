@@ -19,41 +19,32 @@
 
 <body>
     <style>
+        .display-1 {
+            font-size: 3.5rem;
+            margin-top: 32px;
+        }
 
+        .row {
+            margin-left: 32px;
+            margin-top: 31px;
+            text-align: center;
+            justify-content: space-around;
 
-.display-1{
-    font-size: 3.5rem;
-    margin-top: 32px;
-}
-.row{
-    margin-left:32px;
-    margin-top:31px;
-    text-align: center; 
-    justify-content: space-around;
-    
-}
+        }
 
-.card{
-    width: 20rem;
-    margin-top: 15px;
-    margin-right:25px;
-    text-align: center;
-}
+        .card {
+            width: 20rem;
+            margin-top: 15px;
+            margin-right: 25px;
+            text-align: center;
+        }
 
-.featurette-divider{
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
-    margin-top:6rem;
-    margin-bottom:rem;
-}
-
-
-
-
-
-
-
-
+        .featurette-divider {
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            margin-top: 6rem;
+            margin-bottom: rem;
+        }
     </style>
     <header>
         <!-- CABEÇALHO -->
@@ -79,10 +70,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#form">Orçamento</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Currículo
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#abaobjeto">OBJETIVO</a>
+                            <a class="dropdown-item" href="#abaformacao">FORMAÇÃO</a>
+                        </div>
+                    </div>
                 </ul>
 
             </div>
@@ -126,13 +123,14 @@
         <div class="container">
             <h2 class="display-4 text-justify" style="margin-top:32px;">PORTFÓLIO</h2>
         </div>
-        <div class="row" >
+        <div class="row">
             <!-- cards1 -->
             <div class="card">
                 <img src="assets/site1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">WORKSHOP</h5>
-                    <p class="card-text"> Foi realizado um workshop para a selecionar a turma EAD do {REPROGRAMA}.</p>
+                    <p class="card-text"> Foi realizado um workshop para seleção da primeira turma em EAD do
+                        {REPROGRAMA}.</p>
                     <a href="https://analuizaferreiracosta.netlify.com/" class="btn btn-primary">Veja mais!</a>
                 </div>
             </div>
@@ -177,7 +175,7 @@
         <hr class="featurette-divider">
 
         <div class="container">
-            <h1 class="display-1 "id="sob">Sobre Mim</h1>
+            <h1 class="display-1 " id="sob">Sobre Mim</h1>
         </div>
         <div class="text-center">
             <img src="assets/eu.png" class="rounded" alt="..." style="">
@@ -201,7 +199,7 @@
 
 
     <!-- Formulario -->
-    <section class="formulario" id="form" >
+    <section class="formulario" id="form">
         <!-- Linha que separa os temas -->
         <hr class="featurette-divider">
 
