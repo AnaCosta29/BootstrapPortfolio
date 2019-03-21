@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PORTFOLIO ANA COSTA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <script src="main.js"></script>
 
     <!-- Faz com que o Bootstrap fucione a biblioteca -->
@@ -19,6 +19,7 @@
 
 <body>
     <style>
+        
         .box-Principal {
             margin: 0px;
             padding: 0px;
@@ -29,6 +30,7 @@
         }
 
         #box-general {
+            margin-top: -49px;
             width: 90%;
             margin: 20px auto;
             background-color: whitesmoke;
@@ -39,7 +41,7 @@
         }
 
         ul {
-            list-style-type:circle;
+            list-style-type: circle;
         }
 
         a {
@@ -53,6 +55,10 @@
 
         .foto {
             margin-top: 100px;
+        }
+        .progress{
+            background-color: white;
+            margin: 3px;
         }
     </style>
     <header>
@@ -87,12 +93,7 @@
                             <a class="dropdown-item" href="#abarede">REDES SOCIAIS</a>
                         </div>
                     </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Orçamento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
+                    
 
                 </ul>
 
@@ -139,8 +140,14 @@
             <!-- Inicio  perfil -->
             <div class="container box-Principal">
                 <div class="row">
-
-                    <div class="col col-md-3">
+                    <!-- Extra small =.col-xs	Small=.col-sm	Medium =.col-md -->
+                    <!-- xs (para telefones - telas com menos de 768 pixels de largura)
+                        sm (para tablets - telas iguais ou maiores que 768px de largura)
+                        md (para laptops pequenos - telas iguais ou maiores que 992 pixels de largura)
+                        lg (para laptops e desktops - telas iguais ou maiores que 1200px de largura) -->
+                        
+                    <div class="col col-md-3"> 
+                        <!-- tres coluna -3 -->
                         <!-- Imagem de perfil -->
                         <img class="img-thumbnail" src="assets/perfil.png" alt="">
                     </div>
@@ -159,7 +166,7 @@
 
         </div>
 
-        
+
 
         <!-- Começo do menu-->
 
@@ -232,29 +239,19 @@
             <div class="row">
 
                 <div class="col col-md-12">
-                    <h5>PORTFOLIO</h5>
-                    <p><a href="">...</a></p>
-
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <span class="badge badge-success badge-pill">Visual Code</span>
-                        </li>
-
-                        <li class="list-inline-item">
-                            <span class="badge badge-success badge-pill">Git</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="badge badge-success badge-pill">HTML5</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="badge badge-success badge-pill">CSS3</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="badge badge-success badge-pill">Bootstrap</span>
-                        </li>
-
-                    </ul>
-
+                    <h5>HABILIDADES</h5>
+                
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP</div>
+                      </div>
+                      
+                          
                 </div>
 
             </div>
@@ -304,7 +301,7 @@
 
     </section>
 
-<!-- terminio do menu -->
+    <!-- terminio do menu -->
 
 
 
