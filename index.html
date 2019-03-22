@@ -19,9 +19,12 @@
 
 <body>
     <style>
-        .display-1 {
-            font-size: 3.5rem;
-            margin-top: 32px;
+        .foto{
+            margin-left: 140px;
+        }
+        .card-text {
+            text-align: justify;
+            font-size: 20px;
         }
 
         .row {
@@ -32,23 +35,19 @@
 
         }
 
-         .card { 
+        .card {
             padding: 15px;
             width: 20rem;
             margin-top: 15px;
             margin-right: 25px;
             text-align: center;
-        } 
+        }
 
         .featurette-divider {
             border: 0;
             border-top: 1px solid rgba(0, 0, 0, .1);
             margin-top: 6rem;
             margin-bottom: rem;
-        }
-
-        .display-4 {
-            margin-left: 14px;
         }
     </style>
     <header>
@@ -128,8 +127,17 @@
     <!-- Incio do card to portfolio -->
 
     <section class="portifolio" id="portfolio">
+        <div class="card-body">
+            <h1 class="display-4" style="margin-left:23px ;text-align: center;">PORTFÓLIO</h1>
+            <p class="card-text">
 
-        <h2 class="display-4 text-justify" style="margin-top:32px;">PORTFÓLIO</h2>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+                in classical literature, discovered the undoubtable source.
+            </p>
+        </div>
         </div>
         <div class="row">
             <!-- cards1 -->
@@ -183,13 +191,13 @@
         <hr class="featurette-divider">
 
         <div class="container">
-            <h1 class="display-1 " id="sob">Sobre Mim</h1>
+            <h1 class="display-4 " class="titulo" id="sob" style="text-align: center;"  >SOBRE MIM</h1>
         </div>
         <div class="text-center">
-            <img src="assets/eu.png" class="rounded" alt="...">
+            <img src="assets/eu.png" class="rounded  foto" alt="...">
 
 
-            <p class="text-center" style=" margin-top: -350px;">Ambitioni dedisse scripsisse iudicaretur. Cras mattis
+            <p class="card-text" style=" margin-top: -350px;padding: 18px">Ambitioni dedisse scripsisse iudicaretur. Cras mattis
                 iudicium purus sit amet
                 fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex
                 communi.
@@ -213,7 +221,7 @@
 
         <div class="container" style="width:80%;    border: 1px solid #ccc;
         margin-top: 89px;">
-            <h1 class="display-4 text_center">Fale Conosco</h1>
+            <h1 class="display-4" style=" text-align: center;"  >Fale Conosco</h1>
             <p class="text-center">
                 Faça conosco seu orçamento ,sem compromisso.</p>
             <form>
