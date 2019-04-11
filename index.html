@@ -224,26 +224,28 @@
             <h1 class="display-4" style=" text-align: center;"  >Fale Conosco</h1>
             <p class="text-center">
                 Faça conosco seu orçamento ,sem compromisso.</p>
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Nome</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Informe seu nome">
+
+            <form action="# ">
+                <div class="contato">
+                    <label for="contatoInputNome">Nome</label>
+                    <input type="text" class="form-control" id="contatoInputNome"name="user" placeholder="Informe seu nome">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">E-mail</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                        placeholder="Informe seu E-mail">
+                    <label for="contatoInputEmail">E-mail</label>
+                    <input type="text" class="form-control" id="contatoInputEmail"name="email"
+                        placeholder="email@exemplo.com.br">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Telefone</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2"
+                    <label for="contatoInputTelefone">Telefone</label>
+                    <input type="text" class="form-control" id="contatoInputTelefone"name="phone"
                         placeholder="Informe seu telefone">
-                </div>
-                <div class="form-group "> <label for="exampleFormControlTextarea1">Mensagem</label> <textarea
-                        class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> </div>
+<!-- textArea -->
+                <div class= "form-group"> 
+                    <label for="contatoInputMessage">Mensagem</label> 
+                    <textarea class="form-control" id="contatoInputMessage"name="msg" rows="3"></textarea> </div>
 
 
-                <button type="submit" value="submit">Enviar</button>
+                <button type="submit" value="submit" class="cadastro__button" id="btn">Enviar</button>
             </form>
 
         </div>
@@ -265,6 +267,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <!-- Chamando o js formulario -->
+        <script src="script/form.js"></script>
 </body>
 
 </html>
