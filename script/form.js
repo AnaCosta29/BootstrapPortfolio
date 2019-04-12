@@ -3,10 +3,10 @@ const $contatoInputEmail = document.getElementById(`contatoInputEmail`)
 const $contatoInputTelefone = document.getElementById(`contatoInputTelefone`)
 const $contatoInputMessage = document.getElementById(`contatoInputMessage`)
 const $btn = document.getElementById(`btn`)
-const $form = document.querySelector('form')
+
 //presta atençao quando tiver(evento) uma ação sobre vocë
 //quando o usuario enviar o submit executa uma função
-form.addEventListener(`submit`, function (event) {
+btn.addEventListener(`click`, function (event) {
     event.preventDefault()//previne que evento padrao ocorre
 
     if (
@@ -14,12 +14,10 @@ form.addEventListener(`submit`, function (event) {
         $contatoInputNome.value === undefined ||
         $contatoInputNome.value === null ||
         $contatoInputNome.value === `` ||
-        $contatoInputNome.value === ` ` ||
-        $contatoInputNome.value != Number ||
-        $contatoInputNome.value.length < 2) {
+        $contatoInputNome.value === ` `){
 
         $contatoInputNome.focus()
-        alert("Digite um nome válido")
+        alert("Digite um nome válido");
 
         return false
     }
@@ -27,9 +25,9 @@ form.addEventListener(`submit`, function (event) {
     else if (
         $contatoInputEmail.value === undefined ||
         $contatoInputEmail.value === null ||
-        $contatoInputEmail.value === `` ||
+        $contatoInputEmail.value.trim === `` ||
         $contatoInputEmail.value === ` ` ||
-        $contatoInputEmail.value.indexOf("@")==-1 ||
+        $contatoInputEmail.value.indexOf("@")== -1 ||
         $contatoInputEmail.value.indexOf(".") == -1) {
         $contatoInputEmail.focus()
         alert("Digite um email válido")
@@ -40,7 +38,7 @@ form.addEventListener(`submit`, function (event) {
     else if (
         $contatoInputTelefone.value === undefined ||
         $contatoInputTelefone.value === null ||
-        $contatoInputTelefone.value === `` ||
+        $contatoInputTelefone.value.trim === `` ||
         $contatoInputTelefone.value === ` ` ||
         isNaN($contatoInputTelefone.value) ||
         $contatoInputTelefone.value.length < 9) {
@@ -53,7 +51,7 @@ form.addEventListener(`submit`, function (event) {
     else if (
         $contatoInputMessage.value === undefined ||
         $contatoInputMessage.value === null ||
-        $contatoInputMessage.value === `` ||
+        $contatoInputMessage.value.trim === `` ||
         $contatoInputMessage.value === ` ` ||
         $contatoInputMessage.value.length < 10) {
 
